@@ -1,0 +1,9 @@
+joey,pi,log:2,gamma
+Thread Count: 1,Avg. Sec: 14.264 (Avg. Min: 0.238),Avg. Sec: 39.71 (Avg. Min: 0.662),Avg. Sec: 362.448 (Avg. Min: 6.041)
+Thread Count: 2,Avg. Sec: 5.124 (Avg. Min: 0.085),Avg. Sec: 13.92 (Avg. Min: 0.232),Avg. Sec: 125.842 (Avg. Min: 2.097)
+Thread Count: 3,Avg. Sec: 5.144 (Avg. Min: 0.086),Avg. Sec: 14.187 (Avg. Min: 0.236),Avg. Sec: 127.278 (Avg. Min: 2.121)
+Thread Count: 4,Avg. Sec: 3.921 (Avg. Min: 0.065),Avg. Sec: 10.793 (Avg. Min: 0.18),Avg. Sec: 97.744 (Avg. Min: 1.629)
+Thread Count: 5,Avg. Sec: 4.098 (Avg. Min: 0.068),Avg. Sec: 11.171 (Avg. Min: 0.186),Avg. Sec: 101.187 (Avg. Min: 1.686)
+Thread Count: 6,Avg. Sec: 3.95 (Avg. Min: 0.066),Avg. Sec: 10.798 (Avg. Min: 0.18),Avg. Sec: 97.988 (Avg. Min: 1.633)
+Thread Count: 7,Avg. Sec: 3.812 (Avg. Min: 0.064),Avg. Sec: 10.573 (Avg. Min: 0.176),Avg. Sec: 96.89 (Avg. Min: 1.615)
+Thread Count: 8,Avg. Sec: 3.611 (Avg. Min: 0.06),Avg. Sec: 9.996 (Avg. Min: 0.167),Avg. Sec: 90.321 (Avg. Min: 1.505)

@@ -1,0 +1,27 @@
+# #use "sde2.caml";;
+val firstDupHelp : int -> int list -> int = <fun>
+val firstNonRepHelp : int -> int list -> int list -> int = <fun>
+val sumOfTwoHelp : int list -> int list -> int -> int list -> bool = <fun>
+val cykHelp : int -> int -> int -> (int * int) list -> (int * int) list =
+  <fun>
+val first_duplicate : int list -> int = <fun>
+val first_nonrepeating : int list -> int = <fun>
+val sumOfTwo : int list * int list * int -> bool = <fun>
+val cyk_sublists : int -> (int * int) list = <fun>
+# first_duplicate([4;5;6;7;8;9;1;2;3;4]);;
+- : int = 4
+# first_duplicate([1;2;3;4;5;6;7]);;
+- : int = -10000
+# first_nonrepeating([1;7;4;2;4;1;8;9;4;7;6;5]);;
+- : int = 2
+# first_nonrepeating([1;6;6;1;2;4;7;7;3;4;2;3]);;
+- : int = -10000
+# sumOfTwo([1;2;3], [10;20;30;40], 41);;
+- : bool = true
+# sumOfTwo([1;2;3], [10;20;30;40], 5);;
+- : bool = false
+# cyk_sublists(5);;
+- : (int * int) list = [(1, 4); (2, 3); (3, 2); (4, 1)]
+# cyk_sublists(6);;
+- : (int * int) list = [(1, 5); (2, 4); (3, 3); (4, 2); (5, 1)]
+# 

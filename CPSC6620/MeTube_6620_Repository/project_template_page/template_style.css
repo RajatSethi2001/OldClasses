@@ -1,0 +1,87 @@
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: rgb(240, 72, 21);
+    overflow: hidden;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav .left a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 25px;
+  }
+
+  /* Insert image on left side */
+  .topnav .left img {
+      float: left;
+      width: 200px;
+      height: 75px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav .left a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav .left a.active {
+    background-color: #8711cc;
+    color: white;
+  }
+
+  /* Location of the login button/information */
+  .topnav .right a {
+    float: right;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 25px;
+  }
+
+  /* Change the color of links on hover */
+  .topnav .right a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav .right a.active {
+    background-color: #8711cc;
+    color: white;
+  }
+
+  .topnav .right img{
+    float: right;
+    width: 50px;
+    height: 50px;
+    padding: 15px;
+  }
+
+  /* Search box for the website */
+  .topnav .center input[type=text] {
+    float: center;
+    padding: 10px;
+    border: none;
+    margin-top: 15px;
+    margin-right: 5px;
+    font-size: 17px;
+  }
+
+  .main {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+    font-size: 25px;
+  }
+  .main input[type=text],
+        input[type=email],
+        input[type=password]{
+    width: 50%;
+    padding: 2px;
+    display: inline-block;
+    background:lavender;
+  }

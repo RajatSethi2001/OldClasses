@@ -1,0 +1,63 @@
+let rec firstDupHelp head list =
+    if list = []
+       then -10000
+    else
+      if (List.mem head list)
+        then head
+        else firstDupHelp (List.hd list) (List.tl list);;
+
+let rec firstNonRepHelp head list oldList =
+    if list = [] then
+      if (List.mem head oldList) then
+        -10000
+      else
+        head
+    else
+      if (List.mem head list || List.mem head oldList) then
+        firstNonRepHelp (List.hd list) (List.tl list) (oldList @ [head])
+      else
+        head;;
+
+let rec sumOfTwoHelp a b v used =
+  if a = [] then
+    false
+
+  else
+    if (List.hd a) + (List.hd b) = v then
+      true
+    else
+      if (List.tl b) = [] then
+        sumOfTwoHelp (List.tl a) (b @ used) v ([])
+      else
+        sumOfTwoHelp (a) (List.tl b) v (used @ b);;
+
+let rec cykHelp n l r p =
+    if n = l then
+      p
+    else
+      cykHelp n (l+1) (r-1) (p @ [(l, r)]);;
+
+
+let rec first_duplicate list =
+   if list = [] then
+    -10000
+   else
+    firstDupHelp (List.hd list) (List.tl list);;
+
+let rec first_nonrepeating list =
+  if list = [] then
+    -10000
+  else
+     firstNonRepHelp (List.hd list) (List.tl list) ([]);;
+
+let rec sumOfTwo (a, b, v) =
+    if a = [] || b = [] then
+      false
+    else
+      sumOfTwoHelp (a) (b) (v) ([]);;
+
+let rec cyk_sublists n =
+  if n < 2 then
+    []
+  else
+    cykHelp (n) (1) (n-1) ([]);;
